@@ -1,0 +1,12 @@
+{
+  "pt": "pk",
+  "sessionID": "10001",
+  "payload": {
+    "cmd": 6,
+    "uid": "100000",
+    "password": "202cb962ac59075b964b07152d234b70",
+    "localIP": "192.68.2.1",
+    "localPort": "10",
+    "versionID": 0
+  }
+}

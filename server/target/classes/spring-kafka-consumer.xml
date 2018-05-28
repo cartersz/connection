@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+                http://www.springframework.org/schema/beans
+                http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+    <!-- 定义consumer的参数 -->
+    <bean id="consumerProperties" class="java.util.HashMap">
+        <constructor-arg>
+            <map>
+                <entry key="bootstrap.servers" value="192.168.2.201:9092,192.168.2.202:9092,192.168.2.192:9092" />
+                <entry key="group.id" value="0" />
+                <entry key="enable.auto.commit" value="false" />
+                <entry key="auto.offset.reset" value="latest" />
+                <entry key="auto.commit.interval.ms" value="1000" />
+                <entry key="session.timeout.ms" value="15000" />
+                <entry key="key.deserializer"
+                       value="org.apache.kafka.common.serialization.StringDeserializer" />
+                <entry key="value.deserializer"
+                       value="org.apache.kafka.common.serialization.StringDeserializer" />
+            </map>
+        </constructor-arg>
+    </bean>
+
+    <!-- 创建consumerFactory bean -->
+    <bean id="consumerFactory"
+          class="org.springframework.kafka.core.DefaultKafkaConsumerFactory">
+        <constructor-arg>
+            <ref bean="consumerProperties" />
+        </constructor-arg>
+    </bean>
+
+    <!-- 实际执行消息消费的类 -->
+    <bean id="kafkaListener" class="com.orvibo.cloud.connection.server.mq.kafka.KafkaListener" >
+        <property name="mqReceiver" ref="mqReceiver"/>
+    </bean>
+    <bean id="kafkaAcknowledgeListener" class="com.orvibo.cloud.connection.server.mq.kafka.KafkaAcknowledgeListener">
+        <property name="mqReceiver" ref="mqReceiver"/>
+    </bean>
+
+    <bean id="connectionTestTopicContainerProperties"
+          class="org.springframework.kafka.listener.config.ContainerProperties">
+        <constructor-arg value="connection-test" />
+        <property name="messageListener" ref="kafkaAcknowledgeListener" />
+        <!-- 提交offset,批量提交 -->
+        <!--<property name="ackMode" value="MANUAL"/>-->
+        <!-- 提交offset的方式,处理完一条消息就立即提交 -->
+        <property name="ackMode" value="MANUAL_IMMEDIATE"/>
+    </bean>
+
+    <!--<bean id="connectionTestTopicMessageListener"-->
+          <!--class="org.springframework.kafka.listener.KafkaMessageListenerContainer"-->
+          <!--init-method="doStart">-->
+        <!--<constructor-arg ref="consumerFactory" />-->
+        <!--<constructor-arg ref="connectionTestTopicContainerProperties" />-->
+    <!--</bean>-->
+
+    <bean id="connectionTestTopicConcurrentMessageListenerContainer"
+          class="org.springframework.kafka.listener.ConcurrentMessageListenerContainer"
+          init-method="doStart" destroy-method="stop">
+        <constructor-arg ref="consumerFactory" />
+        <constructor-arg ref="connectionTestTopicContainerProperties" />
+        <property name="concurrency" value="3" />
+    </bean>
+</beans>

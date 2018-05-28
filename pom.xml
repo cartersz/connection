@@ -1,0 +1,219 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.orvibo.cloud.connection</groupId>
+  <artifactId>connection-parent</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>server</module>
+    <module>client</module>
+    <module>common</module>
+  </modules>
+  <packaging>pom</packaging>
+
+  <name>connection-parent</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <hibernate.version>4.3.7.Final</hibernate.version>
+    <spring-data.version>Kay-RELEASE</spring-data.version>
+    <druid.version>1.0.27</druid.version>
+    <file_encoding>UTF-8</file_encoding>
+    <project.build.sourceEncoding>${file_encoding}</project.build.sourceEncoding>
+  </properties>
+  <dependencyManagement>
+      <dependencies>
+        <dependency>
+          <groupId>io.netty</groupId>
+          <artifactId>netty-all</artifactId>
+          <version>4.1.9.Final</version>
+        </dependency>
+        <dependency>
+          <groupId>ch.qos.logback</groupId>
+          <artifactId>logback-classic</artifactId>
+          <version>1.2.3</version>
+        </dependency>
+        <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>jcl-over-slf4j</artifactId>
+          <version>1.7.12</version>
+        </dependency>
+        <dependency>
+          <groupId>com.alibaba</groupId>
+          <artifactId>fastjson</artifactId>
+          <version>1.2.28</version>
+        </dependency>
+        <dependency>
+          <groupId>org.apache.commons</groupId>
+          <artifactId>commons-lang3</artifactId>
+          <version>3.6</version>
+        </dependency>
+        <dependency>
+          <groupId>commons-codec</groupId>
+          <artifactId>commons-codec</artifactId>
+          <version>1.10</version>
+        </dependency>
+        <!--<dependency>-->
+          <!--<groupId>org.springframework</groupId>-->
+          <!--<artifactId>spring-core</artifactId>-->
+          <!--<version>4.3.11.RELEASE</version>-->
+          <!--<exclusions>-->
+            <!--<exclusion>-->
+              <!--<groupId>commons-logging</groupId>-->
+              <!--<artifactId>commons-logging</artifactId>-->
+            <!--</exclusion>-->
+          <!--</exclusions>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+          <!--<groupId>org.springframework</groupId>-->
+          <!--<artifactId>spring-context</artifactId>-->
+          <!--<version>4.3.11.RELEASE</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+          <!--<groupId>org.springframework</groupId>-->
+          <!--<artifactId>spring-context-support</artifactId>-->
+          <!--<version>4.3.11.RELEASE</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+          <!--<groupId>org.springframework</groupId>-->
+          <!--<artifactId>spring-test</artifactId>-->
+          <!--<version>4.3.11.RELEASE</version>-->
+        <!--</dependency>-->
+        <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-framework-bom</artifactId>
+          <!--<version>4.3.12.RELEASE</version>-->
+          <version>5.0.0.RELEASE</version>
+          <type>pom</type>
+          <scope>import</scope>
+        </dependency>
+        <dependency>
+          <groupId>org.springframework.cloud</groupId>
+          <artifactId>spring-cloud-context</artifactId>
+          <version>1.2.4.RELEASE</version>
+        </dependency>
+        <dependency>
+          <groupId>org.springframework.kafka</groupId>
+          <artifactId>spring-kafka</artifactId>
+          <version>1.2.1.RELEASE</version>
+        </dependency>
+
+        <dependency>
+          <groupId>org.springframework.data</groupId>
+          <artifactId>spring-data-releasetrain</artifactId>
+          <version>${spring-data.version}</version>
+          <scope>import</scope>
+          <type>pom</type>
+        </dependency>
+        <dependency>
+          <groupId>org.springframework.data</groupId>
+          <artifactId>spring-data-redis</artifactId>
+          <version>1.8.7.RELEASE</version>
+        </dependency>
+
+        <!--<dependency>-->
+          <!--<groupId>org.springframework.boot</groupId>-->
+          <!--<artifactId>spring-boot</artifactId>-->
+          <!--<version>1.5.7.RELEASE</version>-->
+        <!--</dependency>-->
+
+
+        <dependency>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-dependencies</artifactId>
+          <version>1.5.7.RELEASE</version>
+          <type>pom</type>
+          <scope>import</scope>
+        </dependency>
+
+
+        <dependency>
+          <groupId>org.apache.kafka</groupId>
+          <artifactId>kafka_2.11</artifactId>
+          <version>0.10.2.1</version>
+        </dependency>
+
+        <!--jackson kafka json序列化需要使用-->
+        <dependency>
+          <groupId>org.codehaus.jackson</groupId>
+          <artifactId>jackson-mapper-asl</artifactId>
+          <version>1.9.13</version>
+        </dependency>
+        <dependency>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-core</artifactId>
+          <version>2.8.6</version>
+        </dependency>
+        <dependency>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-databind</artifactId>
+          <version>2.8.6</version>
+        </dependency>
+
+        <dependency>
+          <groupId>redis.clients</groupId>
+          <artifactId>jedis</artifactId>
+          <version>2.9.0</version>
+        </dependency>
+
+        <!--ctrip apollo config -->
+        <dependency>
+          <groupId>com.ctrip.framework.apollo</groupId>
+          <artifactId>apollo-client</artifactId>
+          <version>0.9.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+          <groupId>com.alibaba</groupId>
+          <artifactId>druid</artifactId>
+          <version>${druid.version}</version>
+        </dependency>
+
+        <dependency>
+          <groupId>org.hibernate</groupId>
+          <artifactId>hibernate-entitymanager</artifactId>
+          <version>${hibernate.version}</version>
+        </dependency>
+
+        <dependency>
+          <groupId>mysql</groupId>
+          <artifactId>mysql-connector-java</artifactId>
+          <version>5.1.26</version>
+        </dependency>
+
+        <!-- elastic job -->
+        <dependency>
+          <groupId>com.dangdang</groupId>
+          <artifactId>elastic-job-lite-core</artifactId>
+          <version>2.1.5</version>
+        </dependency>
+        <dependency>
+          <groupId>com.dangdang</groupId>
+          <artifactId>elastic-job-lite-spring</artifactId>
+          <version>2.1.5</version>
+        </dependency>
+
+        <dependency>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+          <version>4.12</version>
+        </dependency>
+      </dependencies>
+  </dependencyManagement>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>2.3.2</version>
+          <configuration>
+            <source>1.8</source>
+            <target>1.8</target>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>

@@ -1,0 +1,3510 @@
+[2017-11-22 17:33:43.427] [INFO ] [main] [com.orvibo.cloud.connection.server.Main : 18] - cloud connection service starting...
+[2017-11-22 17:33:43.563] [INFO ] [main] [org.springframework.context.support.ClassPathXmlApplicationContext : 589] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6fc6f14e: startup date [Wed Nov 22 17:33:43 CST 2017]; root of context hierarchy
+[2017-11-22 17:33:43.638] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-server.xml]
+[2017-11-22 17:33:43.788] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-kafka-consumer.xml]
+[2017-11-22 17:33:43.853] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-kafka-producer.xml]
+[2017-11-22 17:33:44.231] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 45] - Starting TCP Server...
+[2017-11-22 17:33:44.585] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 61] - start TCP server 192.168.0.193 successfully on port 10010
+[2017-11-22 17:33:44.649] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 17:33:44.720] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 17:33:44.769] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-11-22 17:33:44.770] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-11-22 17:33:44.776] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 17:33:44.777] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-2
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 17:33:44.780] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-11-22 17:33:44.781] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-11-22 17:33:44.781] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 17:33:44.782] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-3
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 17:33:44.785] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-11-22 17:33:44.786] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-11-22 17:33:44.790] [INFO ] [main] [org.springframework.context.support.DefaultLifecycleProcessor : 353] - Starting beans in phase 0
+[2017-11-22 17:33:44.794] [INFO ] [main] [org.springframework.context.support.DefaultLifecycleProcessor : 353] - Starting beans in phase 0
+[2017-11-22 17:33:44.795] [INFO ] [main] [com.orvibo.cloud.connection.server.Main : 21] - cloud connection service started
+[2017-11-22 17:33:44.861] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-11-22 17:33:44.863] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 17:33:44.864] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 17:33:44.864] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 17:33:44.866] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-11-22 17:33:44.866] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 17:33:44.867] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 17:33:44.867] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 17:33:44.876] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 17:33:44.888] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-11-22 17:33:44.888] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 17:33:44.889] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 17:33:44.889] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 17:33:44.893] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 17:33:44.894] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 17:33:44.950] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 3
+[2017-11-22 17:33:44.950] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 3
+[2017-11-22 17:33:44.950] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 3
+[2017-11-22 17:33:44.952] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-1] for group 0
+[2017-11-22 17:33:44.952] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-2] for group 0
+[2017-11-22 17:33:44.952] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-0] for group 0
+[2017-11-22 17:33:45.082] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-2]
+[2017-11-22 17:33:45.082] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-0]
+[2017-11-22 17:33:45.275] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-1]
+[2017-11-22 17:33:54.738] [INFO ] [main] [com.orvibo.cloud.connection.server.Main : 18] - cloud connection service starting...
+[2017-11-22 17:33:54.817] [INFO ] [main] [org.springframework.context.support.ClassPathXmlApplicationContext : 589] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5ce81285: startup date [Wed Nov 22 17:33:54 CST 2017]; root of context hierarchy
+[2017-11-22 17:33:54.863] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-server.xml]
+[2017-11-22 17:33:54.968] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-kafka-consumer.xml]
+[2017-11-22 17:33:55.000] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-kafka-producer.xml]
+[2017-11-22 17:33:55.346] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 45] - Starting TCP Server...
+[2017-11-22 17:33:55.466] [ERROR] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 66] - start TCP server 192.168.0.193 failed on port 10010. 
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:128)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:554)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1258)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:980)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:250)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:365)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:403)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:442)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-11-22 17:33:55.469] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 72] - Stopping TCP Server on port 10010...
+[2017-11-22 17:33:59.956] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 17:34:00.002] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 17:34:00.043] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-11-22 17:34:00.043] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-11-22 17:34:00.048] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 17:34:00.049] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-2
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 17:34:00.051] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-11-22 17:34:00.052] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-11-22 17:34:00.052] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 17:34:00.053] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-3
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 17:34:00.056] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-11-22 17:34:00.056] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-11-22 17:34:00.062] [INFO ] [main] [org.springframework.context.support.DefaultLifecycleProcessor : 353] - Starting beans in phase 0
+[2017-11-22 17:34:00.066] [INFO ] [main] [org.springframework.context.support.DefaultLifecycleProcessor : 353] - Starting beans in phase 0
+[2017-11-22 17:34:00.066] [INFO ] [main] [com.orvibo.cloud.connection.server.Main : 21] - cloud connection service started
+[2017-11-22 17:34:00.121] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-11-22 17:34:00.121] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-11-22 17:34:00.123] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 17:34:00.123] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 17:34:00.124] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 17:34:00.124] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 17:34:00.124] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 17:34:00.124] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 17:34:00.126] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-11-22 17:34:00.126] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 17:34:00.127] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 17:34:00.127] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 17:34:03.032] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [connection-test-0] for group 0
+[2017-11-22 17:34:03.032] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [connection-test-1] for group 0
+[2017-11-22 17:34:03.035] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [connection-test-2] for group 0
+[2017-11-22 17:34:03.145] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[connection-test-0]
+[2017-11-22 17:34:03.146] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[connection-test-2]
+[2017-11-22 17:34:03.146] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 17:34:03.146] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 17:34:03.329] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[connection-test-1]
+[2017-11-22 17:34:03.330] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 17:34:03.429] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 4
+[2017-11-22 17:34:03.429] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 4
+[2017-11-22 17:34:03.429] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 4
+[2017-11-22 17:34:03.429] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 4
+[2017-11-22 17:34:03.429] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 4
+[2017-11-22 17:34:03.429] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 4
+[2017-11-22 17:34:03.430] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-2] for group 0
+[2017-11-22 17:34:03.430] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-1] for group 0
+[2017-11-22 17:34:03.431] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [] for group 0
+[2017-11-22 17:34:03.433] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[]
+[2017-11-22 17:34:03.440] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [] for group 0
+[2017-11-22 17:34:03.440] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [] for group 0
+[2017-11-22 17:34:03.441] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-0] for group 0
+[2017-11-22 17:34:03.441] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[]
+[2017-11-22 17:34:03.441] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[]
+[2017-11-22 17:34:03.442] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-1]
+[2017-11-22 17:34:03.442] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-2]
+[2017-11-22 17:34:03.449] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-0]
+[2017-11-22 17:50:40.111] [INFO ] [main] [com.orvibo.cloud.connection.server.Main : 18] - cloud connection service starting...
+[2017-11-22 17:50:40.194] [INFO ] [main] [org.springframework.context.support.ClassPathXmlApplicationContext : 589] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5ce81285: startup date [Wed Nov 22 17:50:40 CST 2017]; root of context hierarchy
+[2017-11-22 17:50:40.248] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-server.xml]
+[2017-11-22 17:50:40.345] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-kafka-consumer.xml]
+[2017-11-22 17:50:40.376] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-kafka-producer.xml]
+[2017-11-22 17:50:40.716] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 51] - Starting TCP Server...
+[2017-11-22 17:50:41.008] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 67] - start TCP server 192.168.0.193 successfully on port 10010
+[2017-11-22 17:50:41.058] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 17:50:41.104] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 17:50:41.141] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-11-22 17:50:41.141] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-11-22 17:50:41.147] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 17:50:41.148] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-2
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 17:50:41.151] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-11-22 17:50:41.151] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-11-22 17:50:41.152] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 17:50:41.153] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-3
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 17:50:41.157] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-11-22 17:50:41.157] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-11-22 17:50:41.158] [WARN ] [main] [org.springframework.context.support.ClassPathXmlApplicationContext : 557] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'connectionTestTopicConcurrentMessageListenerContainer' defined in class path resource [spring-kafka-consumer.xml]: Invalid destruction signature; nested exception is org.springframework.beans.factory.support.BeanDefinitionValidationException: Method 'doStop' of bean 'connectionTestTopicConcurrentMessageListenerContainer' has a non-boolean parameter - not supported as destroy method
+[2017-11-22 17:50:41.158] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 79] - Stopping TCP Server on port 10010...
+[2017-11-22 17:50:41.218] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-11-22 17:50:41.218] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-11-22 17:50:41.220] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 17:50:41.220] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 17:50:41.221] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 17:50:41.221] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 17:50:41.221] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 17:50:41.221] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 17:50:41.223] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-11-22 17:50:41.224] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 17:50:41.225] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 17:50:41.225] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 17:50:41.235] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 17:50:41.241] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 7
+[2017-11-22 17:50:41.241] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 7
+[2017-11-22 17:50:41.241] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 7
+[2017-11-22 17:50:41.242] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-1] for group 0
+[2017-11-22 17:50:41.242] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-2] for group 0
+[2017-11-22 17:50:41.242] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-0] for group 0
+[2017-11-22 17:50:41.250] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-1]
+[2017-11-22 17:50:41.251] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-0]
+[2017-11-22 17:50:41.251] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-2]
+[2017-11-22 17:50:55.864] [INFO ] [main] [com.orvibo.cloud.connection.server.Main : 18] - cloud connection service starting...
+[2017-11-22 17:50:55.945] [INFO ] [main] [org.springframework.context.support.ClassPathXmlApplicationContext : 589] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5ce81285: startup date [Wed Nov 22 17:50:55 CST 2017]; root of context hierarchy
+[2017-11-22 17:50:55.987] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-server.xml]
+[2017-11-22 17:50:56.078] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-kafka-consumer.xml]
+[2017-11-22 17:50:56.103] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-kafka-producer.xml]
+[2017-11-22 17:50:56.434] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 51] - Starting TCP Server...
+[2017-11-22 17:50:56.545] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 67] - start TCP server 192.168.0.193 successfully on port 10010
+[2017-11-22 17:50:56.617] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 17:50:56.682] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 17:50:56.721] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-11-22 17:50:56.721] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-11-22 17:50:56.726] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 17:50:56.727] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-2
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 17:50:56.730] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-11-22 17:50:56.730] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-11-22 17:50:56.732] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 17:50:56.733] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-3
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 17:50:56.737] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-11-22 17:50:56.738] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-11-22 17:50:56.739] [WARN ] [main] [org.springframework.context.support.ClassPathXmlApplicationContext : 557] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'connectionTestTopicConcurrentMessageListenerContainer' defined in class path resource [spring-kafka-consumer.xml]: Invalid destruction signature; nested exception is org.springframework.beans.factory.support.BeanDefinitionValidationException: Method 'doStop' of bean 'connectionTestTopicConcurrentMessageListenerContainer' has a non-boolean parameter - not supported as destroy method
+[2017-11-22 17:50:56.740] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 79] - Stopping TCP Server on port 10010...
+[2017-11-22 17:50:56.798] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-11-22 17:50:56.801] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 17:50:56.801] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 17:50:56.801] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 17:50:56.804] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-11-22 17:50:56.804] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-11-22 17:50:56.805] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 17:50:56.805] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 17:50:56.805] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 17:50:56.805] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 17:50:56.805] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 17:50:56.806] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 17:50:59.282] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 8
+[2017-11-22 17:50:59.282] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 8
+[2017-11-22 17:50:59.282] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 8
+[2017-11-22 17:50:59.283] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-0] for group 0
+[2017-11-22 17:50:59.283] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-2] for group 0
+[2017-11-22 17:50:59.283] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-1] for group 0
+[2017-11-22 17:50:59.294] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-1]
+[2017-11-22 17:50:59.295] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-0]
+[2017-11-22 17:50:59.295] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-2]
+[2017-11-22 18:03:05.023] [INFO ] [main] [com.orvibo.cloud.connection.server.Main : 18] - cloud connection service starting...
+[2017-11-22 18:03:05.123] [INFO ] [main] [org.springframework.context.support.ClassPathXmlApplicationContext : 589] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5ce81285: startup date [Wed Nov 22 18:03:05 CST 2017]; root of context hierarchy
+[2017-11-22 18:03:05.175] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-server.xml]
+[2017-11-22 18:03:05.268] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-kafka-consumer.xml]
+[2017-11-22 18:03:05.301] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-kafka-producer.xml]
+[2017-11-22 18:03:05.628] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 51] - Starting TCP Server...
+[2017-11-22 18:03:05.914] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 67] - start TCP server 192.168.0.193 successfully on port 10010
+[2017-11-22 18:03:05.961] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:03:06.004] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:03:06.041] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-11-22 18:03:06.042] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-11-22 18:03:06.046] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:03:06.047] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-2
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:03:06.050] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-11-22 18:03:06.050] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-11-22 18:03:06.051] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:03:06.052] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-3
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:03:06.056] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-11-22 18:03:06.056] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-11-22 18:03:06.060] [INFO ] [main] [org.springframework.context.support.DefaultLifecycleProcessor : 353] - Starting beans in phase 0
+[2017-11-22 18:03:06.063] [INFO ] [main] [org.springframework.context.support.DefaultLifecycleProcessor : 353] - Starting beans in phase 0
+[2017-11-22 18:03:06.064] [INFO ] [main] [com.orvibo.cloud.connection.server.Main : 21] - cloud connection service started
+[2017-11-22 18:03:06.111] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-11-22 18:03:06.111] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-11-22 18:03:06.113] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 18:03:06.113] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 18:03:06.114] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 18:03:06.114] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 18:03:06.114] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 18:03:06.114] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 18:03:06.117] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-11-22 18:03:06.118] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 18:03:06.118] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 18:03:06.119] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 18:03:06.127] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 18:03:06.135] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 11
+[2017-11-22 18:03:06.135] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 11
+[2017-11-22 18:03:06.135] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 11
+[2017-11-22 18:03:06.136] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-2] for group 0
+[2017-11-22 18:03:06.136] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-0] for group 0
+[2017-11-22 18:03:06.136] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-1] for group 0
+[2017-11-22 18:03:06.146] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-0]
+[2017-11-22 18:03:06.147] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-1]
+[2017-11-22 18:03:06.146] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-2]
+[2017-11-22 18:03:30.079] [INFO ] [main] [com.orvibo.cloud.connection.server.Main : 18] - cloud connection service starting...
+[2017-11-22 18:03:30.166] [INFO ] [main] [org.springframework.context.support.ClassPathXmlApplicationContext : 589] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5ce81285: startup date [Wed Nov 22 18:03:30 CST 2017]; root of context hierarchy
+[2017-11-22 18:03:30.218] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-server.xml]
+[2017-11-22 18:03:30.324] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-kafka-consumer.xml]
+[2017-11-22 18:03:30.352] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-kafka-producer.xml]
+[2017-11-22 18:03:30.685] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 51] - Starting TCP Server...
+[2017-11-22 18:03:30.791] [ERROR] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 72] - start TCP server 192.168.0.193 failed on port 10010. 
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:128)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:554)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1258)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:980)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:250)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:365)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:403)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:442)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-11-22 18:03:30.793] [WARN ] [main] [org.springframework.context.support.ClassPathXmlApplicationContext : 557] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'nettyTCPServer' defined in class path resource [spring-server.xml]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: org.springframework.context.support.ClassPathXmlApplicationContext@5ce81285: startup date [Wed Nov 22 18:03:30 CST 2017]; root of context hierarchy
+[2017-11-22 18:11:59.880] [INFO ] [main] [com.orvibo.cloud.connection.server.Main : 18] - cloud connection service starting...
+[2017-11-22 18:11:59.958] [INFO ] [main] [org.springframework.context.support.ClassPathXmlApplicationContext : 589] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5ce81285: startup date [Wed Nov 22 18:11:59 CST 2017]; root of context hierarchy
+[2017-11-22 18:12:00.004] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-server.xml]
+[2017-11-22 18:12:00.092] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-kafka-consumer.xml]
+[2017-11-22 18:12:00.118] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-kafka-producer.xml]
+[2017-11-22 18:12:00.405] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 50] - Starting TCP Server...
+[2017-11-22 18:12:00.746] [ERROR] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 71] - start TCP server 192.168.0.193 failed on port 10010. 
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:128)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:554)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1258)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:980)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:250)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:365)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:403)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:442)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+[2017-11-22 18:12:00.748] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 77] - Stopping TCP Server on port 10010...
+[2017-11-22 18:12:05.241] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:12:05.285] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:12:05.324] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-11-22 18:12:05.324] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-11-22 18:12:05.329] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:12:05.330] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-2
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:12:05.332] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-11-22 18:12:05.332] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-11-22 18:12:05.333] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:12:05.334] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-3
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:12:05.337] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-11-22 18:12:05.338] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-11-22 18:12:05.343] [INFO ] [main] [org.springframework.context.support.DefaultLifecycleProcessor : 353] - Starting beans in phase 0
+[2017-11-22 18:12:05.347] [INFO ] [main] [org.springframework.context.support.DefaultLifecycleProcessor : 353] - Starting beans in phase 0
+[2017-11-22 18:12:05.347] [INFO ] [main] [com.orvibo.cloud.connection.server.Main : 21] - cloud connection service started
+[2017-11-22 18:12:05.401] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-11-22 18:12:05.401] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-11-22 18:12:05.404] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 18:12:05.404] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 18:12:05.404] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 18:12:05.404] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 18:12:05.405] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 18:12:05.405] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 18:12:05.407] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-11-22 18:12:05.408] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 18:12:05.408] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 18:12:05.408] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 18:12:07.762] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [connection-test-1] for group 0
+[2017-11-22 18:12:07.762] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [connection-test-2] for group 0
+[2017-11-22 18:12:07.838] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [connection-test-0] for group 0
+[2017-11-22 18:12:08.693] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[connection-test-2]
+[2017-11-22 18:12:08.693] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[connection-test-0]
+[2017-11-22 18:12:08.693] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[connection-test-1]
+[2017-11-22 18:12:08.694] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 18:12:08.694] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 18:12:08.694] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 18:12:08.817] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 12
+[2017-11-22 18:12:08.817] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 12
+[2017-11-22 18:12:08.817] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 12
+[2017-11-22 18:12:08.817] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 12
+[2017-11-22 18:12:08.819] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-0] for group 0
+[2017-11-22 18:12:08.818] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 12
+[2017-11-22 18:12:08.819] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-2] for group 0
+[2017-11-22 18:12:08.820] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [] for group 0
+[2017-11-22 18:12:08.820] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[]
+[2017-11-22 18:12:08.824] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-0]
+[2017-11-22 18:12:08.824] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-2]
+[2017-11-22 18:12:08.828] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 12
+[2017-11-22 18:12:08.829] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [] for group 0
+[2017-11-22 18:12:08.829] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [] for group 0
+[2017-11-22 18:12:08.830] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-1] for group 0
+[2017-11-22 18:12:08.830] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[]
+[2017-11-22 18:12:08.830] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[]
+[2017-11-22 18:12:08.837] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-1]
+[2017-11-22 18:13:03.019] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 18:13:03.019] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 18:13:03.020] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 18:13:03.096] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [connection-test-0] for group 0
+[2017-11-22 18:13:03.096] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [connection-test-2] for group 0
+[2017-11-22 18:13:03.979] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[connection-test-0]
+[2017-11-22 18:13:03.979] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[connection-test-2]
+[2017-11-22 18:13:03.980] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 18:13:03.980] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 18:13:03.986] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 13
+[2017-11-22 18:13:03.986] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 13
+[2017-11-22 18:13:03.986] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 13
+[2017-11-22 18:13:03.986] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-2] for group 0
+[2017-11-22 18:13:03.986] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-0] for group 0
+[2017-11-22 18:13:03.987] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-1] for group 0
+[2017-11-22 18:13:03.993] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-2]
+[2017-11-22 18:13:03.993] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-0]
+[2017-11-22 18:13:03.994] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-1]
+[2017-11-22 18:14:34.405] [INFO ] [main] [com.orvibo.cloud.connection.server.Main : 18] - cloud connection service starting...
+[2017-11-22 18:14:34.481] [INFO ] [main] [org.springframework.context.support.ClassPathXmlApplicationContext : 589] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5ce81285: startup date [Wed Nov 22 18:14:34 CST 2017]; root of context hierarchy
+[2017-11-22 18:14:34.525] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-server.xml]
+[2017-11-22 18:14:34.625] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-kafka-consumer.xml]
+[2017-11-22 18:14:34.652] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-kafka-producer.xml]
+[2017-11-22 18:14:34.937] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 50] - Starting TCP Server...
+[2017-11-22 18:14:35.206] [WARN ] [main] [org.springframework.context.support.ClassPathXmlApplicationContext : 557] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'nettyTCPServer' defined in class path resource [spring-server.xml]: Invocation of init method failed; nested exception is java.net.BindException: Address already in use
+[2017-11-22 18:21:34.800] [INFO ] [main] [com.orvibo.cloud.connection.server.Main : 18] - cloud connection service starting...
+[2017-11-22 18:21:34.878] [INFO ] [main] [org.springframework.context.support.ClassPathXmlApplicationContext : 589] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5ce81285: startup date [Wed Nov 22 18:21:34 CST 2017]; root of context hierarchy
+[2017-11-22 18:21:34.921] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-server.xml]
+[2017-11-22 18:21:35.018] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-kafka-consumer.xml]
+[2017-11-22 18:21:35.043] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-kafka-producer.xml]
+[2017-11-22 18:21:35.317] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 49] - Starting TCP Server...
+[2017-11-22 18:21:35.616] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 64] - start TCP server 192.168.0.193 successfully on port 10010
+[2017-11-22 18:21:35.666] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:21:35.713] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:21:35.750] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-11-22 18:21:35.750] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-11-22 18:21:35.755] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:21:35.756] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-2
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:21:35.758] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-11-22 18:21:35.759] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-11-22 18:21:35.760] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:21:35.761] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-3
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:21:35.765] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-11-22 18:21:35.765] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-11-22 18:21:35.770] [INFO ] [main] [org.springframework.context.support.DefaultLifecycleProcessor : 353] - Starting beans in phase 0
+[2017-11-22 18:21:35.773] [INFO ] [main] [org.springframework.context.support.DefaultLifecycleProcessor : 353] - Starting beans in phase 0
+[2017-11-22 18:21:35.773] [INFO ] [main] [com.orvibo.cloud.connection.server.Main : 21] - cloud connection service started
+[2017-11-22 18:21:35.823] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-11-22 18:21:35.823] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-11-22 18:21:35.826] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 18:21:35.826] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 18:21:35.826] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 18:21:35.826] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 18:21:35.826] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 18:21:35.826] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 18:21:35.829] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-11-22 18:21:35.830] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 18:21:35.830] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 18:21:35.830] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 18:21:35.839] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 18:21:35.847] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 16
+[2017-11-22 18:21:35.847] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 16
+[2017-11-22 18:21:35.847] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 16
+[2017-11-22 18:21:35.848] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-0] for group 0
+[2017-11-22 18:21:35.848] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-2] for group 0
+[2017-11-22 18:21:35.848] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-1] for group 0
+[2017-11-22 18:21:35.856] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-2]
+[2017-11-22 18:21:35.856] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-1]
+[2017-11-22 18:21:35.856] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-0]
+[2017-11-22 18:21:52.214] [INFO ] [main] [com.orvibo.cloud.connection.server.Main : 18] - cloud connection service starting...
+[2017-11-22 18:21:52.291] [INFO ] [main] [org.springframework.context.support.ClassPathXmlApplicationContext : 589] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5ce81285: startup date [Wed Nov 22 18:21:52 CST 2017]; root of context hierarchy
+[2017-11-22 18:21:52.347] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-server.xml]
+[2017-11-22 18:21:52.440] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-kafka-consumer.xml]
+[2017-11-22 18:21:52.466] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-kafka-producer.xml]
+[2017-11-22 18:21:52.722] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 49] - Starting TCP Server...
+[2017-11-22 18:21:52.821] [WARN ] [main] [org.springframework.context.support.ClassPathXmlApplicationContext : 557] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'nettyTCPServer' defined in class path resource [spring-server.xml]: Invocation of init method failed; nested exception is java.net.BindException: Address already in use
+[2017-11-22 18:23:03.597] [INFO ] [Thread-1] [org.springframework.context.support.DefaultLifecycleProcessor : 368] - Stopping beans in phase 0
+[2017-11-22 18:23:04.206] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer : 621] - Consumer stopped
+[2017-11-22 18:23:04.206] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer : 621] - Consumer stopped
+[2017-11-22 18:23:04.267] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer : 621] - Consumer stopped
+[2017-11-22 18:31:48.726] [INFO ] [main] [com.orvibo.cloud.connection.server.Main : 18] - cloud connection service starting...
+[2017-11-22 18:31:48.805] [INFO ] [main] [org.springframework.context.support.ClassPathXmlApplicationContext : 589] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5ce81285: startup date [Wed Nov 22 18:31:48 CST 2017]; root of context hierarchy
+[2017-11-22 18:31:48.848] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-server.xml]
+[2017-11-22 18:31:48.941] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-kafka-consumer.xml]
+[2017-11-22 18:31:48.966] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-kafka-producer.xml]
+[2017-11-22 18:31:49.242] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 49] - Starting TCP Server...
+[2017-11-22 18:31:49.473] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 64] - start TCP server 192.168.0.193 successfully on port 10010
+[2017-11-22 18:31:49.521] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:31:49.567] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:31:49.605] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-11-22 18:31:49.605] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-11-22 18:31:49.610] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:31:49.610] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-2
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:31:49.613] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-11-22 18:31:49.613] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-11-22 18:31:49.614] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:31:49.615] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-3
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:31:49.618] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-11-22 18:31:49.618] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-11-22 18:31:49.622] [INFO ] [main] [org.springframework.context.support.DefaultLifecycleProcessor : 353] - Starting beans in phase 0
+[2017-11-22 18:31:49.626] [INFO ] [main] [org.springframework.context.support.DefaultLifecycleProcessor : 353] - Starting beans in phase 0
+[2017-11-22 18:31:49.626] [INFO ] [main] [com.orvibo.cloud.connection.server.Main : 21] - cloud connection service started
+[2017-11-22 18:31:49.677] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-11-22 18:31:49.677] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-11-22 18:31:49.677] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-11-22 18:31:49.679] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 18:31:49.680] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 18:31:49.680] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 18:31:49.680] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 18:31:49.680] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 18:31:49.680] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 18:31:49.680] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 18:31:49.680] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 18:31:49.680] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 18:31:49.693] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 18:31:49.708] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 19
+[2017-11-22 18:31:49.708] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 19
+[2017-11-22 18:31:49.708] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 19
+[2017-11-22 18:31:49.709] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-1] for group 0
+[2017-11-22 18:31:49.709] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-2] for group 0
+[2017-11-22 18:31:49.709] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-0] for group 0
+[2017-11-22 18:31:49.718] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-0]
+[2017-11-22 18:31:49.718] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-1]
+[2017-11-22 18:31:49.718] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-2]
+[2017-11-22 18:32:04.479] [INFO ] [Thread-1] [org.springframework.context.support.DefaultLifecycleProcessor : 368] - Stopping beans in phase 0
+[2017-11-22 18:32:04.775] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer : 621] - Consumer stopped
+[2017-11-22 18:32:04.777] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer : 621] - Consumer stopped
+[2017-11-22 18:32:04.777] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer : 621] - Consumer stopped
+[2017-11-22 18:35:01.626] [INFO ] [main] [com.orvibo.cloud.connection.server.Main : 18] - cloud connection service starting...
+[2017-11-22 18:35:01.702] [INFO ] [main] [org.springframework.context.support.ClassPathXmlApplicationContext : 589] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5ce81285: startup date [Wed Nov 22 18:35:01 CST 2017]; root of context hierarchy
+[2017-11-22 18:35:01.747] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-server.xml]
+[2017-11-22 18:35:01.841] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-kafka-consumer.xml]
+[2017-11-22 18:35:01.867] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-kafka-producer.xml]
+[2017-11-22 18:35:02.149] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 49] - Starting TCP Server...
+[2017-11-22 18:35:02.402] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 64] - start TCP server 192.168.0.193 successfully on port 10010
+[2017-11-22 18:35:02.454] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:35:02.503] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:35:02.542] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-11-22 18:35:02.542] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-11-22 18:35:02.547] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:35:02.548] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-2
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:35:02.552] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-11-22 18:35:02.553] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-11-22 18:35:02.554] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:35:02.555] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-3
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-11-22 18:35:02.559] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-11-22 18:35:02.559] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-11-22 18:35:02.565] [INFO ] [main] [org.springframework.context.support.DefaultLifecycleProcessor : 353] - Starting beans in phase 0
+[2017-11-22 18:35:02.569] [INFO ] [main] [org.springframework.context.support.DefaultLifecycleProcessor : 353] - Starting beans in phase 0
+[2017-11-22 18:35:02.569] [INFO ] [main] [com.orvibo.cloud.connection.server.Main : 21] - cloud connection service started
+[2017-11-22 18:35:02.618] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-11-22 18:35:02.618] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-11-22 18:35:02.621] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 18:35:02.621] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 18:35:02.621] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 18:35:02.621] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 18:35:02.621] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 18:35:02.621] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 18:35:02.624] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-11-22 18:35:02.624] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-11-22 18:35:02.625] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-11-22 18:35:02.625] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 18:35:02.633] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-11-22 18:35:02.638] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 22
+[2017-11-22 18:35:02.639] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 22
+[2017-11-22 18:35:02.639] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 22
+[2017-11-22 18:35:02.640] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-2] for group 0
+[2017-11-22 18:35:02.640] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-1] for group 0
+[2017-11-22 18:35:02.640] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-0] for group 0
+[2017-11-22 18:35:02.648] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-1]
+[2017-11-22 18:35:02.648] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-0]
+[2017-11-22 18:35:02.648] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-2]
+[2017-11-22 18:35:14.426] [INFO ] [Thread-1] [org.springframework.context.support.DefaultLifecycleProcessor : 368] - Stopping beans in phase 0
+[2017-11-22 18:35:14.692] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer : 621] - Consumer stopped
+[2017-11-22 18:35:14.693] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer : 621] - Consumer stopped
+[2017-11-22 18:35:14.694] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer : 621] - Consumer stopped

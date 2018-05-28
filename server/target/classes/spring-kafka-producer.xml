@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+                http://www.springframework.org/schema/beans
+                http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+
+    <bean id="producerProperties" class="java.util.HashMap">
+        <constructor-arg>
+            <map>
+                <entry key="bootstrap.servers" value="192.168.2.201:9092,192.168.2.202:9092,192.168.2.192:9092" />
+                <entry key="group.id" value="0" />
+                <entry key="retries" value="1" />
+                <entry key="batch.size" value="16384" />
+                <entry key="linger.ms" value="1" />
+                <entry key="buffer.memory" value="33554432" />
+                <entry key="key.serializer"
+                       value="org.apache.kafka.common.serialization.StringSerializer" />
+                <!--<entry key="value.serializer"-->
+                       <!--value="org.springframework.kafka.support.serializer.JsonSerializer" />-->
+                <entry key="value.serializer"
+                       value="org.apache.kafka.common.serialization.StringSerializer" />
+            </map>
+        </constructor-arg>
+    </bean>
+
+    <bean id="producerFactory"
+          class="org.springframework.kafka.core.DefaultKafkaProducerFactory">
+        <constructor-arg>
+            <ref bean="producerProperties" />
+        </constructor-arg>
+    </bean>
+
+    <bean id="kafkaTemplate" class="org.springframework.kafka.core.KafkaTemplate">
+        <constructor-arg ref="producerFactory" />
+        <constructor-arg name="autoFlush" value="true" />
+        <property name="defaultTopic" value="defaultTopic" />
+        <property name="producerListener" ref="producerListener" />
+    </bean>
+
+    <bean id="producerListener" class="com.orvibo.cloud.connection.server.mq.kafka.KafkaProducerListener" />
+</beans>

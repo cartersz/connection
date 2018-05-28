@@ -1,0 +1,13 @@
+{
+  "pt": "pk",
+  "sessionID": "10000",
+  "payload": {
+    "cmd": 0,
+    "serial": "100",
+    "source": "S20",
+    "softwareVersion": "v1.0.0",
+    "sysVersion": "iOS 8.2",
+    "hardwareVersion": "hardware 1.0",
+    "language": "chinese"
+  }
+}

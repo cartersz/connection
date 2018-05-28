@@ -1,0 +1,610 @@
+[2017-12-20 18:01:21.447] [INFO ] [main] [com.orvibo.cloud.connection.server.Main : 18] - cloud connection service starting...
+[2017-12-20 18:01:21.567] [INFO ] [main] [org.springframework.context.support.ClassPathXmlApplicationContext : 589] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6fc6f14e: startup date [Wed Dec 20 18:01:21 CST 2017]; root of context hierarchy
+[2017-12-20 18:01:21.646] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-server.xml]
+[2017-12-20 18:01:21.811] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-kafka-consumer.xml]
+[2017-12-20 18:01:21.849] [INFO ] [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader : 316] - Loading XML bean definitions from class path resource [spring-kafka-producer.xml]
+[2017-12-20 18:01:22.287] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 44] - Starting TCP Server...
+[2017-12-20 18:01:22.391] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer : 59] - start TCP server 192.168.2.85 successfully on port 10010
+[2017-12-20 18:01:22.455] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-12-20 18:01:22.528] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-12-20 18:01:22.578] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-12-20 18:01:22.579] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-12-20 18:01:22.584] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-12-20 18:01:22.585] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-2
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-12-20 18:01:22.589] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-12-20 18:01:22.589] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-12-20 18:01:22.590] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-12-20 18:01:22.591] [INFO ] [main] [org.apache.kafka.clients.consumer.ConsumerConfig : 180] - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	check.crcs = true
+	client.id = consumer-3
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2017-12-20 18:01:22.595] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-12-20 18:01:22.595] [INFO ] [main] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-12-20 18:01:22.600] [INFO ] [main] [org.springframework.context.support.DefaultLifecycleProcessor : 353] - Starting beans in phase 0
+[2017-12-20 18:01:22.604] [INFO ] [main] [org.springframework.context.support.DefaultLifecycleProcessor : 353] - Starting beans in phase 0
+[2017-12-20 18:01:22.605] [INFO ] [main] [com.orvibo.cloud.connection.server.Main : 21] - cloud connection service started
+[2017-12-20 18:01:23.670] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-12-20 18:01:23.670] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-12-20 18:01:23.674] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-12-20 18:01:23.674] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-12-20 18:01:23.675] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-12-20 18:01:23.675] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-12-20 18:01:23.675] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-12-20 18:01:23.675] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-12-20 18:01:23.680] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-12-20 18:01:23.681] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [] for group 0
+[2017-12-20 18:01:23.681] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[]
+[2017-12-20 18:01:23.681] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-12-20 18:01:24.286] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-12-20 18:01:25.274] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 2
+[2017-12-20 18:01:25.274] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 2
+[2017-12-20 18:01:25.274] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 2
+[2017-12-20 18:01:25.275] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-1] for group 0
+[2017-12-20 18:01:25.275] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-2] for group 0
+[2017-12-20 18:01:25.275] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-0] for group 0
+[2017-12-20 18:01:25.969] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-1]
+[2017-12-20 18:01:25.969] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-0]
+[2017-12-20 18:01:26.027] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-2]
+[2017-12-20 18:04:06.685] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.command.CommandJsonReader : 22] - file path => /Users/sunlin/work/cloud/connection/server/target/test-classes/com/orvibo/cloud/connection/server/tcp/command/RequestKey.json
+[2017-12-20 18:04:06.692] [INFO ] [nioEventLoopGroup-3-1] [com.orvibo.cloud.connection.server.tcp.netty.PackageInboundHandler : 34] - Server channel--register
+[2017-12-20 18:04:06.693] [INFO ] [nioEventLoopGroup-3-1] [com.orvibo.cloud.connection.server.tcp.netty.PackageInboundHandler : 49] - Server channel--active
+[2017-12-20 18:04:06.693] [INFO ] [nioEventLoopGroup-3-1] [com.orvibo.cloud.connection.server.tcp.netty.PackageInboundHandler : 51] - Device IP : => /127.0.0.1
+[2017-12-20 18:04:06.836] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.NettyClient : 51] - Channel Send message.....
+[2017-12-20 18:04:06.844] [INFO ] [main] [com.orvibo.cloud.connection.server.tcp.NettyClient : 53] - Channel Send message finished.
+[2017-12-20 18:04:06.859] [INFO ] [nioEventLoopGroup-2-1] [com.orvibo.cloud.connection.server.tcp.netty.PackageEncoder : 20] - PackageEncoder start encode command package....
+[2017-12-20 18:04:07.089] [INFO ] [nioEventLoopGroup-2-1] [com.orvibo.cloud.connection.server.tcp.netty.CommandParser : 117] - payload crc string => 2B66725C
+[2017-12-20 18:04:07.098] [INFO ] [nioEventLoopGroup-2-1] [com.orvibo.cloud.connection.server.tcp.netty.CommandParser : 125] - payload.length=> 144, send payload byte is [69, 81, -12, 51, -75, 45, 60, -109, -97, 94, -61, -53, 27, -114, 79, 77, -113, -47, 42, -28, 15, -101, -51, 6, -34, 35, 96, -69, -28, 111, 114, 37, 84, 80, 54, -104, -23, 12, -65, -71, 39, -102, 103, -123, -113, -21, 18, -56, -55, -113, 123, 29, -17, -53, -11, -13, -5, 28, -71, -119, -128, 62, 57, -30, 52, -37, 39, 67, -9, -81, 105, 12, -18, 50, 19, -57, 71, -114, 122, -87, -71, 40, -26, 73, -122, 124, -24, -124, -59, -127, -58, 17, -60, -126, 102, -65, -90, 59, -13, -68, 38, -28, 110, -97, -71, 86, -27, -18, 103, -82, -81, 104, 103, -7, 99, 35, 122, 32, -120, 61, 123, 20, 4, 69, 104, -63, -118, -28, 49, 54, 119, 106, -73, 114, -8, 81, -85, -15, 6, 81, 37, -49, -1, 45], bytebuf.length=>186
+[2017-12-20 18:04:07.100] [INFO ] [nioEventLoopGroup-2-1] [com.orvibo.cloud.connection.server.tcp.netty.PackageEncoder : 28] - byteBuf.readableBytes() = 186
+[2017-12-20 18:04:07.101] [INFO ] [nioEventLoopGroup-2-1] [com.orvibo.cloud.connection.server.tcp.netty.PackageEncoder : 29] - PackageEncoder finish encode command package....
+[2017-12-20 18:04:07.119] [INFO ] [nioEventLoopGroup-3-1] [com.orvibo.cloud.connection.server.tcp.netty.second.Package2ObjectDecoder : 28] - Package2ObjectDecoder decode ByteBuf...
+[2017-12-20 18:04:07.122] [INFO ] [nioEventLoopGroup-3-1] [com.orvibo.cloud.connection.server.tcp.netty.second.Package2ObjectDecoder : 42] - Package2ObjectDecoder parseBuffer...
+[2017-12-20 18:04:07.133] [INFO ] [nioEventLoopGroup-3-1] [com.orvibo.cloud.connection.utils.CRCUtil : 24] - when check CRC, the passed crc string is 2B66725C, the calculated crc string is 2B66725C, payload byte = [69, 81, -12, 51, -75, 45, 60, -109, -97, 94, -61, -53, 27, -114, 79, 77, -113, -47, 42, -28, 15, -101, -51, 6, -34, 35, 96, -69, -28, 111, 114, 37, 84, 80, 54, -104, -23, 12, -65, -71, 39, -102, 103, -123, -113, -21, 18, -56, -55, -113, 123, 29, -17, -53, -11, -13, -5, 28, -71, -119, -128, 62, 57, -30, 52, -37, 39, 67, -9, -81, 105, 12, -18, 50, 19, -57, 71, -114, 122, -87, -71, 40, -26, 73, -122, 124, -24, -124, -59, -127, -58, 17, -60, -126, 102, -65, -90, 59, -13, -68, 38, -28, 110, -97, -71, 86, -27, -18, 103, -82, -81, 104, 103, -7, 99, 35, 122, 32, -120, 61, 123, 20, 4, 69, 104, -63, -118, -28, 49, 54, 119, 106, -73, 114, -8, 81, -85, -15, 6, 81, 37, -49, -1, 45]
+[2017-12-20 18:04:07.364] [INFO ] [nioEventLoopGroup-3-1] [com.orvibo.cloud.connection.server.tcp.netty.PackageInboundHandler : 27] - Server Receive CommandPackage => head= {hd}, length= {186}, protocolType= {pk}, crc= {2B66725C}, sessionID= {10000}, payload= {{"sysVersion":"iOS 8.2","serial":"100","hardwareVersion":"hardware 1.0","language":"chinese","cmd":0,"source":"S20","softwareVersion":"v1.0.0"}}
+[2017-12-20 18:04:07.365] [INFO ] [nioEventLoopGroup-3-1] [com.orvibo.cloud.connection.server.tcp.netty.PackageInboundHandler : 28] - Send Response Object to MQ
+[2017-12-20 18:04:07.436] [INFO ] [nioEventLoopGroup-3-1] [com.orvibo.cloud.connection.server.mq.kafka.KafkaAcknowledgeListener : 26] - send message BaseCommandDTO json string => {"deviceIp":"/127.0.0.1","loginServer":"192.168.2.85","payload":"{\"sysVersion\":\"iOS 8.2\",\"serial\":\"100\",\"hardwareVersion\":\"hardware 1.0\",\"language\":\"chinese\",\"cmd\":0,\"source\":\"S20\",\"softwareVersion\":\"v1.0.0\"}","pt":"pk","sessionID":"10000"}
+[2017-12-20 18:04:07.440] [INFO ] [nioEventLoopGroup-3-1] [org.apache.kafka.clients.producer.ProducerConfig : 180] - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	block.on.buffer.full = false
+	bootstrap.servers = [192.168.2.201:9092, 192.168.2.202:9092, 192.168.2.192:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.fetch.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 1
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	timeout.ms = 30000
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[2017-12-20 18:04:07.451] [WARN ] [nioEventLoopGroup-3-1] [org.apache.kafka.clients.producer.ProducerConfig : 188] - The configuration 'group.id' was supplied but isn't a known config.
+[2017-12-20 18:04:07.451] [INFO ] [nioEventLoopGroup-3-1] [org.apache.kafka.common.utils.AppInfoParser : 83] - Kafka version : 0.10.2.0
+[2017-12-20 18:04:07.451] [INFO ] [nioEventLoopGroup-3-1] [org.apache.kafka.common.utils.AppInfoParser : 84] - Kafka commitId : 576d93a8dc0cf421
+[2017-12-20 18:04:07.587] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-L-1] [com.orvibo.cloud.connection.server.mq.kafka.KafkaAcknowledgeListener : 21] - receive message from MQ => {"deviceIp":"/127.0.0.1","loginServer":"192.168.2.85","payload":"{\"sysVersion\":\"iOS 8.2\",\"serial\":\"100\",\"hardwareVersion\":\"hardware 1.0\",\"language\":\"chinese\",\"cmd\":0,\"source\":\"S20\",\"softwareVersion\":\"v1.0.0\"}","pt":"pk","sessionID":"10000"}
+[2017-12-20 18:04:07.587] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-L-1] [com.orvibo.cloud.connection.server.mq.kafka.KafkaMQReceiver : 27] - receive mq message jsonContent => {"deviceIp":"/127.0.0.1","loginServer":"192.168.2.85","payload":"{\"sysVersion\":\"iOS 8.2\",\"serial\":\"100\",\"hardwareVersion\":\"hardware 1.0\",\"language\":\"chinese\",\"cmd\":0,\"source\":\"S20\",\"softwareVersion\":\"v1.0.0\"}","pt":"pk","sessionID":"10000"}
+[2017-12-20 18:04:07.646] [INFO ] [kafka-producer-network-thread | producer-1] [com.orvibo.cloud.connection.server.mq.kafka.KafkaProducerListener : 36] - isInterestedInSuccess execute!!
+[2017-12-20 18:04:07.647] [INFO ] [kafka-producer-network-thread | producer-1] [com.orvibo.cloud.connection.server.mq.kafka.KafkaProducerListener : 16] - ========== kafka发送数据成功（日志开始）==========
+[2017-12-20 18:04:07.647] [INFO ] [kafka-producer-network-thread | producer-1] [com.orvibo.cloud.connection.server.mq.kafka.KafkaProducerListener : 17] - ----------topic:connection-test
+[2017-12-20 18:04:07.647] [INFO ] [kafka-producer-network-thread | producer-1] [com.orvibo.cloud.connection.server.mq.kafka.KafkaProducerListener : 18] - ----------partition:null
+[2017-12-20 18:04:07.647] [INFO ] [kafka-producer-network-thread | producer-1] [com.orvibo.cloud.connection.server.mq.kafka.KafkaProducerListener : 19] - ----------key:null
+[2017-12-20 18:04:07.648] [INFO ] [kafka-producer-network-thread | producer-1] [com.orvibo.cloud.connection.server.mq.kafka.KafkaProducerListener : 20] - ----------value:{"deviceIp":"/127.0.0.1","loginServer":"192.168.2.85","payload":"{\"sysVersion\":\"iOS 8.2\",\"serial\":\"100\",\"hardwareVersion\":\"hardware 1.0\",\"language\":\"chinese\",\"cmd\":0,\"source\":\"S20\",\"softwareVersion\":\"v1.0.0\"}","pt":"pk","sessionID":"10000"}
+[2017-12-20 18:04:07.648] [INFO ] [kafka-producer-network-thread | producer-1] [com.orvibo.cloud.connection.server.mq.kafka.KafkaProducerListener : 21] - ----------RecordMetadata:connection-test-0@15
+[2017-12-20 18:04:07.648] [INFO ] [kafka-producer-network-thread | producer-1] [com.orvibo.cloud.connection.server.mq.kafka.KafkaProducerListener : 22] - ========== kafka发送数据成功（日志结束）==========
+[2017-12-20 18:04:07.649] [INFO ] [nioEventLoopGroup-3-1] [com.orvibo.cloud.connection.server.tcp.netty.PackageEncoder : 20] - PackageEncoder start encode command package....
+[2017-12-20 18:04:07.650] [INFO ] [nioEventLoopGroup-3-1] [com.orvibo.cloud.connection.server.tcp.netty.CommandParser : 117] - payload crc string => 2B66725C
+[2017-12-20 18:04:07.658] [INFO ] [nioEventLoopGroup-3-1] [com.orvibo.cloud.connection.server.tcp.netty.CommandParser : 125] - payload.length=> 144, send payload byte is [69, 81, -12, 51, -75, 45, 60, -109, -97, 94, -61, -53, 27, -114, 79, 77, -113, -47, 42, -28, 15, -101, -51, 6, -34, 35, 96, -69, -28, 111, 114, 37, 84, 80, 54, -104, -23, 12, -65, -71, 39, -102, 103, -123, -113, -21, 18, -56, -55, -113, 123, 29, -17, -53, -11, -13, -5, 28, -71, -119, -128, 62, 57, -30, 52, -37, 39, 67, -9, -81, 105, 12, -18, 50, 19, -57, 71, -114, 122, -87, -71, 40, -26, 73, -122, 124, -24, -124, -59, -127, -58, 17, -60, -126, 102, -65, -90, 59, -13, -68, 38, -28, 110, -97, -71, 86, -27, -18, 103, -82, -81, 104, 103, -7, 99, 35, 122, 32, -120, 61, 123, 20, 4, 69, 104, -63, -118, -28, 49, 54, 119, 106, -73, 114, -8, 81, -85, -15, 6, 81, 37, -49, -1, 45], bytebuf.length=>186
+[2017-12-20 18:04:07.658] [INFO ] [nioEventLoopGroup-3-1] [com.orvibo.cloud.connection.server.tcp.netty.PackageEncoder : 28] - byteBuf.readableBytes() = 186
+[2017-12-20 18:04:07.658] [INFO ] [nioEventLoopGroup-3-1] [com.orvibo.cloud.connection.server.tcp.netty.PackageEncoder : 29] - PackageEncoder finish encode command package....
+[2017-12-20 18:04:07.663] [INFO ] [nioEventLoopGroup-2-1] [com.orvibo.cloud.connection.server.tcp.netty.second.Package2ObjectDecoder : 28] - Package2ObjectDecoder decode ByteBuf...
+[2017-12-20 18:04:07.665] [INFO ] [nioEventLoopGroup-2-1] [com.orvibo.cloud.connection.server.tcp.netty.second.Package2ObjectDecoder : 42] - Package2ObjectDecoder parseBuffer...
+[2017-12-20 18:04:07.673] [INFO ] [nioEventLoopGroup-2-1] [com.orvibo.cloud.connection.utils.CRCUtil : 24] - when check CRC, the passed crc string is 2B66725C, the calculated crc string is 2B66725C, payload byte = [69, 81, -12, 51, -75, 45, 60, -109, -97, 94, -61, -53, 27, -114, 79, 77, -113, -47, 42, -28, 15, -101, -51, 6, -34, 35, 96, -69, -28, 111, 114, 37, 84, 80, 54, -104, -23, 12, -65, -71, 39, -102, 103, -123, -113, -21, 18, -56, -55, -113, 123, 29, -17, -53, -11, -13, -5, 28, -71, -119, -128, 62, 57, -30, 52, -37, 39, 67, -9, -81, 105, 12, -18, 50, 19, -57, 71, -114, 122, -87, -71, 40, -26, 73, -122, 124, -24, -124, -59, -127, -58, 17, -60, -126, 102, -65, -90, 59, -13, -68, 38, -28, 110, -97, -71, 86, -27, -18, 103, -82, -81, 104, 103, -7, 99, 35, 122, 32, -120, 61, 123, 20, 4, 69, 104, -63, -118, -28, 49, 54, 119, 106, -73, 114, -8, 81, -85, -15, 6, 81, 37, -49, -1, 45]
+[2017-12-20 18:04:07.674] [INFO ] [nioEventLoopGroup-2-1] [com.orvibo.cloud.connection.server.tcp.ClientPackageInboundHandler : 48] - response object => head= {hd}, length= {186}, protocolType= {pk}, crc= {2B66725C}, sessionID= {10000}, payload= {{"sysVersion":"iOS 8.2","serial":"100","hardwareVersion":"hardware 1.0","language":"chinese","cmd":0,"source":"S20","softwareVersion":"v1.0.0"}}
+[2017-12-20 18:04:35.381] [INFO ] [nioEventLoopGroup-3-1] [com.orvibo.cloud.connection.server.tcp.netty.PackageInboundHandler : 44] - Server channel--inactive
+[2017-12-20 18:04:35.381] [INFO ] [nioEventLoopGroup-3-1] [com.orvibo.cloud.connection.server.tcp.netty.PackageInboundHandler : 39] - Server channel--unregistered
+[2017-12-20 19:22:57.354] [INFO ] [kafka-coordinator-heartbeat-thread | 0] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 19:22:57.356] [INFO ] [kafka-coordinator-heartbeat-thread | 0] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 19:22:57.356] [INFO ] [kafka-coordinator-heartbeat-thread | 0] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:13:53.455] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-12-20 20:13:53.455] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-12-20 20:13:53.455] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-12-20 20:14:08.524] [INFO ] [kafka-coordinator-heartbeat-thread | 0] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:08.537] [INFO ] [kafka-coordinator-heartbeat-thread | 0] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:08.537] [INFO ] [kafka-coordinator-heartbeat-thread | 0] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:08.568] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-12-20 20:14:08.568] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-12-20 20:14:08.568] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-12-20 20:14:23.617] [INFO ] [kafka-coordinator-heartbeat-thread | 0] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:23.621] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-12-20 20:14:23.621] [INFO ] [kafka-coordinator-heartbeat-thread | 0] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:23.621] [INFO ] [kafka-coordinator-heartbeat-thread | 0] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:23.624] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-12-20 20:14:23.624] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-12-20 20:14:26.626] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:26.627] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:26.627] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:26.627] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:26.627] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:26.627] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:26.627] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:26.628] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:26.628] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:26.628] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:26.628] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:26.628] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:26.629] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:26.629] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:26.629] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:26.629] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:26.629] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:26.630] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:26.630] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:26.630] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:26.630] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:26.631] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:26.631] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:26.631] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:26.631] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:26.632] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:26.632] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 20:14:27.025] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-12-20 20:14:27.025] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-12-20 20:14:27.025] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-12-20 20:14:30.038] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [connection-test-0] for group 0
+[2017-12-20 20:14:30.038] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [connection-test-2] for group 0
+[2017-12-20 20:14:30.038] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [connection-test-1] for group 0
+[2017-12-20 21:07:39.350] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[connection-test-1]
+[2017-12-20 21:07:39.350] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-12-20 21:07:39.351] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[connection-test-0]
+[2017-12-20 21:07:39.354] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-12-20 21:07:39.353] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[connection-test-2]
+[2017-12-20 21:07:39.355] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-12-20 21:08:26.681] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 21:33:56.456] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-12-20 21:33:56.456] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-12-20 21:34:09.759] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-12-20 21:34:09.761] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-12-20 21:34:09.772] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 4
+[2017-12-20 21:34:09.773] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-0, connection-test-2, connection-test-1] for group 0
+[2017-12-20 21:34:09.798] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-0, connection-test-2, connection-test-1]
+[2017-12-20 21:34:37.246] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 21:34:37.246] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 21:34:37.358] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-12-20 21:34:37.358] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-12-20 21:34:37.359] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-12-20 21:34:37.359] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-12-20 21:34:39.859] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [connection-test-0, connection-test-2, connection-test-1] for group 0
+[2017-12-20 21:34:39.972] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[connection-test-0, connection-test-2, connection-test-1]
+[2017-12-20 21:34:39.972] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-12-20 21:34:39.977] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 5
+[2017-12-20 21:34:39.977] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 5
+[2017-12-20 21:34:39.978] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 5
+[2017-12-20 21:34:39.978] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-2] for group 0
+[2017-12-20 21:34:39.978] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-1] for group 0
+[2017-12-20 21:34:39.979] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-0] for group 0
+[2017-12-20 21:34:39.981] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-2]
+[2017-12-20 21:34:40.003] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-1]
+[2017-12-20 21:34:40.003] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-0]
+[2017-12-20 22:04:18.353] [INFO ] [kafka-coordinator-heartbeat-thread | 0] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 22:04:18.353] [INFO ] [kafka-coordinator-heartbeat-thread | 0] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 22:04:18.353] [INFO ] [kafka-coordinator-heartbeat-thread | 0] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 22:40:15.674] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-12-20 22:40:15.692] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-12-20 22:40:15.727] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-12-20 22:40:18.707] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 22:40:18.729] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-12-20 22:40:18.730] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 22:40:18.837] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-12-20 22:40:21.851] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [connection-test-0] for group 0
+[2017-12-20 22:40:22.464] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[connection-test-0]
+[2017-12-20 22:40:22.465] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-12-20 22:40:22.469] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 7
+[2017-12-20 22:40:22.470] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-0, connection-test-2, connection-test-1] for group 0
+[2017-12-20 22:40:22.512] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-0, connection-test-2, connection-test-1]
+[2017-12-20 22:40:30.710] [INFO ] [kafka-coordinator-heartbeat-thread | 0] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 22:40:30.774] [INFO ] [kafka-coordinator-heartbeat-thread | 0] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 22:40:30.889] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-12-20 22:40:30.889] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-12-20 22:40:42.929] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 22:40:42.929] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 22:40:42.930] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 22:40:42.930] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 22:40:42.930] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 22:40:42.930] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 22:40:42.931] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 22:40:42.931] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 22:40:42.931] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 22:40:42.931] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 22:40:42.931] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 22:40:42.932] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 22:40:42.932] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 22:40:42.932] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 22:40:42.932] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 22:40:42.933] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 22:40:43.107] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-12-20 22:40:43.107] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 573] - Discovered coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) for group 0.
+[2017-12-20 22:40:46.120] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [connection-test-2] for group 0
+[2017-12-20 22:40:46.120] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [connection-test-1] for group 0
+[2017-12-20 22:40:46.571] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[connection-test-1]
+[2017-12-20 22:40:46.571] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[connection-test-2]
+[2017-12-20 22:40:46.571] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-12-20 22:40:46.572] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-12-20 22:40:49.566] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 393] - Revoking previously assigned partitions [connection-test-0, connection-test-2, connection-test-1] for group 0
+[2017-12-20 22:40:49.645] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 242] - partitions revoked:[connection-test-0, connection-test-2, connection-test-1]
+[2017-12-20 22:40:49.646] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 407] - (Re-)joining group 0
+[2017-12-20 22:40:49.672] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 8
+[2017-12-20 22:40:49.672] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 8
+[2017-12-20 22:40:49.673] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-1] for group 0
+[2017-12-20 22:40:49.673] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-2] for group 0
+[2017-12-20 22:40:49.676] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-2-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-2]
+[2017-12-20 22:40:49.676] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-1-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-1]
+[2017-12-20 22:40:49.771] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 375] - Successfully joined group 0 with generation 8
+[2017-12-20 22:40:49.772] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator : 252] - Setting newly assigned partitions [connection-test-0] for group 0
+[2017-12-20 22:40:50.181] [INFO ] [connectionTestTopicConcurrentMessageListenerContainer-0-C-1] [org.springframework.kafka.listener.ConcurrentMessageListenerContainer : 247] - partitions assigned:[connection-test-0]
+[2017-12-20 23:22:01.347] [INFO ] [kafka-coordinator-heartbeat-thread | 0] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 23:22:01.347] [INFO ] [kafka-coordinator-heartbeat-thread | 0] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0
+[2017-12-20 23:22:01.350] [INFO ] [kafka-coordinator-heartbeat-thread | 0] [org.apache.kafka.clients.consumer.internals.AbstractCoordinator : 618] - Marking the coordinator 192.168.2.202:9092 (id: 2147483646 rack: null) dead for group 0

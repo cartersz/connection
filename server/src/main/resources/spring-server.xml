@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+                http://www.springframework.org/schema/beans
+                http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+
+    <!--<bean id="nettyTCPServer" class="com.orvibo.cloud.connection.server.tcp.netty.NettyTCPServer" init-method="start">-->
+        <!--<property name="packageInboundHandler" ref="packageInboundHandler"/>-->
+        <!--<property name="connectionManager" ref="connectionManager"/>-->
+    <!--</bean>-->
+    <bean id="nettyTCPServer" class="com.orvibo.cloud.connection.server.tcp.netty.second.NettyTCPServer" init-method="start" destroy-method="stop">
+        <property name="packageInboundHandler" ref="packageInboundHandler"/>
+        <property name="connectionManager" ref="connectionManager"/>
+    </bean>
+    <bean id="packageInboundHandler" class="com.orvibo.cloud.connection.server.tcp.netty.PackageInboundHandler" scope="prototype">
+        <property name="mqSender" ref="mqSender"/>
+        <property name="connectionManager" ref="connectionManager"/>
+
+    </bean>
+    <bean id="mqSender" class="com.orvibo.cloud.connection.server.mq.kafka.KafkaMQSender" >
+        <property name="kafkaTemplate" ref="kafkaTemplate"/>
+    </bean>
+    <bean id="mqReceiver" class="com.orvibo.cloud.connection.server.mq.kafka.KafkaMQReceiver">
+        <property name="tcpServer" ref="nettyTCPServer"/>
+        <property name="connectionManager" ref="connectionManager"/>
+    </bean>
+
+    <bean id="connectionManager" class="com.orvibo.cloud.connection.server.tcp.netty.ConnectionManager"/>
+
+    <!--<bean id="packageDecoder" class="com.orvibo.cloud.connection.server.tcp.netty.PackageDecoder" />-->
+    <!--<bean id="packageEncoder" class="com.orvibo.cloud.connection.server.tcp.netty.PackageEncoder" />-->
+
+
+    <import resource="spring-kafka-consumer.xml"/>
+    <import resource="spring-kafka-producer.xml"/>
+</beans>
